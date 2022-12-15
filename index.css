@@ -1,0 +1,331 @@
+body{
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif;
+  line-height: 1.4;
+}
+a{
+  color: black;
+}
+.header{
+ 
+  background-color:rgba(188, 139, 229, 0.85);
+  box-shadow: 3px 3px 4px 0 rgba(0,0,0,.1);
+  position: fixed;
+  width: 100%;
+  z-index:3;
+  
+}
+.header ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+ /* background-color: rgba(188, 139, 229, 0.85); */
+}
+.header ul a{
+  display: block;
+/* outline: 1px solid rebeccapurple; */
+padding: 20px;
+border-right: 1px solid #aaa;
+text-decoration: none;
+}
+.header ul a:hover{
+
+  background-color: var(--primary-color);
+}
+.header .logo{
+  float: left;
+  display: block;
+  font-size: 2em;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+.header .menu {
+  clear: both;
+ max-height: 0;
+  transition: max-height .2s ease-out;
+}
+.header .menu-icon{
+
+  padding: 28px 20px;
+  position: relative;
+  float: right;
+  cursor: pointer;
+
+}
+/* hamburger menu */
+.header .menu-icon .nav-icon{
+  background:#333;
+  display: block;
+  height: 2px;
+  width: 18px;
+  position: relative;
+  transition: background .2s ease-out;
+}
+.header .menu-icon .nav-icon:before{
+  background: #333;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  top: 5px;
+}
+.header .menu-icon .nav-icon:after{
+  background: #333;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  top: -5px;
+}
+/* hides my check box  */
+.header .menu-btn{
+  display: none;
+}
+
+/* animation */
+/* uses chilren of header in input w.menu abd changes to max height of set */
+.header .menu-btn:checked ~ .menu{
+  max-height: 240px;
+
+}
+/* this one will dissappear the bar in center  */
+.header .menu-btn:checked ~ .menu-icon .nav-icon{
+background: transparent;
+}
+/* rotates then top 0 meets in the center */
+.header .menu-btn:checked ~ .menu-icon .nav-icon::before{
+  transform: rotate(-45deg);
+  top: 0;
+  
+}
+/* hits the opposite & meet in the center at 0 as well */
+.header .menu-btn:checked ~ .menu-icon .nav-icon:after{
+  transform: rotate(+45deg);
+  top: 0;
+}
+/* desktop version menu move items side by side  */
+@media (min-width:48em){
+  .header li{
+    float: left;
+  }
+  .header li a{
+    padding: 20px 30px;
+  }
+   /* moves it to the right of the logo instead of under  */
+  .header .menu{
+    clear: none;
+    float: right;
+    max-height: none;
+  } 
+  /* gets rid of the x at this break point */
+  .header .menu-icon{
+    display: none;
+  }
+ *{
+  margin: 0;
+  padding: 0;
+ }
+
+}
+body{
+  flex: wrap;
+  font-family: 'Amatic SC', cursive;
+  font-size: 28px;
+
+ background-image: url(./rings.jpg);
+ background-size: cover;
+ background-repeat: no-repeat;
+ height: 100vh;
+
+@media (max-width: 600px) {
+  body {
+    background-color: lightblue;
+ 
+  }
+}
+}
+:root{
+  --primary-color: rgba(148, 55, 198, 0.45);
+  --overlay-color:rgba(188, 139, 229, 0.85);
+}
+.showcase{
+top:90px;
+position: relative;
+/* margin: ; */
+}
+.showcase .row{
+  flex-direction: row;
+  
+}
+
+
+.socials {
+  /* float: right; */
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-end;
+  
+
+  /* position: sticky; */
+  margin: 4px auto 0 auto;
+  padding: 10px;
+
+}
+.socials a{
+gap:1rem ;
+}
+
+
+
+
+/* :root{
+  --primary-color: rgba(148, 55, 198, 0.45);
+  --overlay-color:rgba(188, 139, 229, 0.85);
+  --menu-speed: 0.75s;
+} */
+
+
+
+
+/* .container{
+  max-width: 960px;
+  margin:auto;
+  overflow: hidden;
+  padding: 0 3rem;
+}
+.showcase{
+  background-color: var(--primary-color);
+  color: #fff;
+  height:100vh;
+  position: inherit;
+  
+}
+.showcase:before{
+  content:"";
+  background: url("images/girl-with-keyboard.jpg") no-repeat center
+   center/cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.showcase .showcase-inner{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: auto;
+}
+.showcase h1 {
+  font-size: 4rem;
+
+}
+.showcase p {
+  font-size: 1.3rem;
+
+}
+
+.btn{
+  display: inline-block;
+  border: none;
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  margin-top: 1rem;
+  text-decoration: none;
+  transition: opacity 1s ease-in;
+}
+.btn:hover{
+  opacity: 0.5;
+}  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  
+ nav{
+    max-width:968px;
+    height: var(--header-height);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+} 
+  #nav-bar {
+    overflow: hidden;
+
+
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+  } */
+   
+  /* Links inside the navbar */
+   /* #nav-bar a {
+    float: right;
+    display: flex;
+    color:black;
+    text-align: center;
+
+    padding: 16px 9px ;
+    text-decoration: none;
+  }  */
+  
+  /* Change background on mouse-over */
+  /* #nav-bar a:hover {
+    color:darkmagenta;
+  } */
+  
+  /* Main content */
+  /* .main {
+    margin-top: 50px; /* Add a top margin to avoid content overlay */
+  
+  
+  /* .flex-container{
+    margin: 4px auto 0 auto;
+    padding:10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .flex-container tr{
+background-color: rgb(198, 166, 229);
+
+
+
+  }
+
+  .socials a {
+    margin: 4px auto 0 auto;
+    padding: 10px;
+
+  }
+  
+
+
+
+
+
+
+

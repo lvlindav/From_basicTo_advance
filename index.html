@@ -4,83 +4,136 @@
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="menu.css">
+		<link rel="stylesheet" href="index.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<script src="https://kit.fontawesome.com/15f70ecea3.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+
         <title>Basic Portfolio</title>
-		<style>
-			body { 
-				background-color: lavender;
-				padding: 1%;
-			}
+		
 
-			p {
-				 font-family:sans-serif;
-			}
-			h2 { 
-				font-family:sans-serif;
-			}
-			h3{
-				font-family:sans-serif;
-			}
-			
-
-		</style>
 	</head>
+
 	<body>
-    <h2> Linda Villanueva</h2>
-		<p><strong>Software Developer</strong></p>
-		<img src="https://cdn1.iconfinder.com/data/icons/user-avatar-20/64/51-woman-1024.png" height= "90px">
-		<hr/>
+		<header class="header">
+			<a href="/" class="logo">LVLINDAV</a>
+		<input class=" menu-btn" type="checkbox" id="menu-btn"/>
+		<label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+			
+				
+					<ul class="menu">
+						<li><a href="#">Home</a></li>
+						<li><a href="aboutme.html">about</a></li>
+						<li><a href="skills.html">skills</a></li>
+						<li><a href="contacts.html">contacts</a></li>
+					</ul>
+		</header>
+
+		<!-- <section class="video-container">
+			<div class="video-container">
+			<video src="https://traversymedia.com/downloads/video.mov" autoplay muted loop></video>
+		</div>
+		</section> -->
+		
+
+	
+ <section class="showcase">
+			<div class="container showcase-inner">
+				<h1>Welcome</h1>
+				
+				<p> Im an aspiring Software Engineer I currenlty mentor at Learning Source where I graduated from and recieved my certification in Software 
+					Development learning full stack web development. I am working on getting a UI and UX design certification. The work I do now inspires me to keep learning and making changes 
+					in my path to success.
+					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus distinctio eveniet, illum nobis quidem sit labore temporibus quod laborum sequi! Unde porro nesciunt aperiam dicta nostrum voluptatibus dolorem. Quam, harum!
+					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo deserunt numquam expedita voluptate eveniet at reiciendis ipsa atque. Voluptatum autem nihil temporibus unde optio voluptatibus nostrum asperiores? Non, quaerat facere!
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste odit impedit labore laudantium ratione consequatur velit ipsam tempore, officia veritatis tempora earum ab corporis consequuntur fugit cupiditate sapiente ex doloremque.
+				
+				</p>
+					<a href="aboutme.html" class="btn">Read more</a>
+			</div>
+	</div>
+	</section>
+	<!-- <h2 class="main"> Linda Villanueva</h2> -->
+			<!-- <p><strong>Software Developer</strong></p> -->
+		<!-- <img src="https://cdn1.iconfinder.com/data/icons/user-avatar-20/64/51-woman-1024.png" height= "90px"> -->
+
+	<!-- <section class="">
 		<h2><b>Summary</i></h2>
-		<p > Im an aspiring Software Engineer I currenlty mentor at Learning Source where I graduated from and recieved my certification in Software 
+		<p> Im an aspiring Software Engineer I currenlty mentor at Learning Source where I graduated from and recieved my certification in Software 
 			Development learning full stack web development. I am working on getting a UI and UX design certification. The work I do now inspires me to keep learning and making changes 
-			in my path to success.
-		</p>
+			in my path to success.</p>
+
+			<p>	Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus tenetur excepturi rerum est modi quas facere molestias nisi necessitatibus, non ipsam doloribus pariatur voluptate eum iste deleniti esse id magnam?
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla itaque in perferendis repellat quisquam doloremque et est reprehenderit, ipsum sequi officia aliquid adipisci distinctio, unde explicabo voluptas blanditiis saepe nam?
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, inventore. Laborum nulla quis laudantium odit amet vitae optio! Odit ipsa architecto, cumque error enim officiis voluptate? Sit ullam recusandae in!
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum omnis cupiditate, et ea impedit distinctio similique fugit vero sed, doloribus praesentium quidem sint? Debitis necessitatibus rerum voluptas harum labore beatae.
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, esse quos nostrum aperiam eos saepe tempora hic illo tempore rerum aut fugiat, provident in eaque. Optio omnis pariatur rem dicta!
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi necessitatibus repudiandae, laborum voluptatibus eveniet earum cumque officiis sint, obcaecati iusto culpa soluta corporis rerum exercitationem architecto natus delectus consectetur perspiciatis!</p>
+			<p>	Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus tenetur excepturi rerum est modi quas facere molestias nisi necessitatibus, non ipsam doloribus pariatur voluptate eum iste deleniti esse id magnam?
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla itaque in perferendis repellat quisquam doloremque et est reprehenderit, ipsum sequi officia aliquid adipisci distinctio, unde explicabo voluptas blanditiis saepe nam?
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, inventore. Laborum nulla quis laudantium odit amet vitae optio! Odit ipsa architecto, cumque error enim officiis voluptate? Sit ullam recusandae in!
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum omnis cupiditate, et ea impedit distinctio similique fugit vero sed, doloribus praesentium quidem sint? Debitis necessitatibus rerum voluptas harum labore beatae.
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, esse quos nostrum aperiam eos saepe tempora hic illo tempore rerum aut fugiat, provident in eaque. Optio omnis pariatur rem dicta!
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi necessitatibus repudiandae, laborum voluptatibus eveniet earum cumque officiis sint, obcaecati iusto culpa soluta corporis rerum exercitationem architecto natus delectus consectetur perspiciatis!</p>
+				<p>	Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus tenetur excepturi rerum est modi quas facere molestias nisi necessitatibus, non ipsam doloribus pariatur voluptate eum iste deleniti esse id magnam?
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla itaque in perferendis repellat quisquam doloremque et est reprehenderit, ipsum sequi officia aliquid adipisci distinctio, unde explicabo voluptas blanditiis saepe nam?
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, inventore. Laborum nulla quis laudantium odit amet vitae optio! Odit ipsa architecto, cumque error enim officiis voluptate? Sit ullam recusandae in!
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum omnis cupiditate, et ea impedit distinctio similique fugit vero sed, doloribus praesentium quidem sint? Debitis necessitatibus rerum voluptas harum labore beatae.
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, esse quos nostrum aperiam eos saepe tempora hic illo tempore rerum aut fugiat, provident in eaque. Optio omnis pariatur rem dicta!
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi necessitatibus repudiandae, laborum voluptatibus eveniet earum cumque officiis sint, obcaecati iusto culpa soluta corporis rerum exercitationem architecto natus delectus consectetur perspiciatis!</p>
+					<p>	Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus tenetur excepturi rerum est modi quas facere molestias nisi necessitatibus, non ipsam doloribus pariatur voluptate eum iste deleniti esse id magnam?
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla itaque in perferendis repellat quisquam doloremque et est reprehenderit, ipsum sequi officia aliquid adipisci distinctio, unde explicabo voluptas blanditiis saepe nam?
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, inventore. Laborum nulla quis laudantium odit amet vitae optio! Odit ipsa architecto, cumque error enim officiis voluptate? Sit ullam recusandae in!
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum omnis cupiditate, et ea impedit distinctio similique fugit vero sed, doloribus praesentium quidem sint? Debitis necessitatibus rerum voluptas harum labore beatae.
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, esse quos nostrum aperiam eos saepe tempora hic illo tempore rerum aut fugiat, provident in eaque. Optio omnis pariatur rem dicta!
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi necessitatibus repudiandae, laborum voluptatibus eveniet earum cumque officiis sint, obcaecati iusto culpa soluta corporis rerum exercitationem architecto natus delectus consectetur perspiciatis!</p>
+	</section> -->
+	<!-- <section>
 		<h2><b>Experience</b></h2>
 		<ul >
 			<li><b>Mentor</b>
 			<p>My Job consist of mentoring and teaching an online full stack course.
 				I oversee 25 to 35 students at a time. My job is to communiate daily with the students and help them troubleshoot and understand the curriculum.</p>
 			</li>
-
 		</ul>
+	</section> -->
+
+	<!-- <section class="flex-container">
 		<h2><b>Skills</b></h2>
 
-	<table border="3">
-    <tr>
+		<table class="flex-container">
+    	<tr class="skills1">
         <th>Launguages</th>
-        <td>Html</td>
-		<td>CSS</td>
-        <td>Javascript</td>
-		<td>Java</td>
-    </tr>
-	<tr>
+        <td><img src="https://cdn0.iconfinder.com/data/icons/HTML5/512/HTML_Logo.png" height="60px">Html</td>
+		<td><img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/badge-css-3-512.png" height="60px">CSS</td>
+        <td><img src="https://cdn2.iconfinder.com/data/icons/designer-skills/128/code-programming-javascript-software-develop-command-language-512.png"height="70px">Javascript</td>
+		<td><img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/181_Java_logo_logos-512.png"height="70px">Java</td>
+  	  </tr>
+		<tr class="skills2">
 		<th>Soft Skills</th>
         <td>Problem Solving</td>
 		<td>Team Work</td>
         <td>Customer Service</td>
 		<td>Flexibility</td>
-	</tr>
-	</table>
+		</tr>
+		</table>
+	</section> -->
 
 
 
- <div class="section">
-           <h2 ><b>Write me a message</b></h2>
-            <form>
-                <input name="name" type="text" placeholder="Name"/><br/>
-                <input name="email" type="email" placeholder="Email"/><br/>
-                <textarea name="message" placeholder="Your message here"></textarea>
-                <input type="submit" value="SEND" class="submit" />
-            </form>
-        </div>
+	
 
-<footer align="left">
-		<h3><b>Socials</b></h3>
-<a href="https://www.linkedin.com/in/lvlindav" target="_blank"><img src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Linkedin_unofficial_colored_svg-1024.png" width="40px"></a>
 
-<a href="https://github.com/lvlindav" target="_blank"><img src="https://cdn4.iconfinder.com/data/icons/social-media-free-13/32/Github_social_media_logo-1024.png" width="40px"></a>
-<hr>
-</footer>
+	<footer class="socials">
+	<a href="https://www.linkedin.com/in/lvlindav" target="_blank"><img src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Linkedin_unofficial_colored_svg-1024.png" width="40px"></a>
+	<a href="https://github.com/lvlindav" target="_blank"><img src="https://cdn4.iconfinder.com/data/icons/social-media-free-13/32/Github_social_media_logo-1024.png" width="40px"></a>
+	<a href="https://woz-u.com/"><img src="https://cdn3.iconfinder.com/data/icons/antto-seo/455/Coding-512.png"height="40px"></a>
+	</footer>
+	
 
+	<script src="" async defer></script>
 	</body>
 
 </html>
