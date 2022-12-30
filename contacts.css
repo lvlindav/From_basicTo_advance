@@ -1,20 +1,41 @@
-body{
-  /* padding-left: 1px; */
-}
+
 #contact{
+    display: flex;
+    justify-content: center;
+    text-align: center;
     padding: 28px;
 }
-#contact textarea{
+#contact label{
     display: flex;
-    /* justify-content: center; */
+    justify-content: center;
+   
+}
+#name{
+    background-color: rgba(188, 139, 229, 0.30);
+    border-radius:4px ;
+    border: solid 1px #333;
+    opacity: 0.5;
+}
+#email{
+    background-color: rgba(188, 139, 229, 0.30);
+    border-radius:4px ;
+    border: solid 1px #333;
+    opacity: 0.5;
+}
+#contact textarea{
+    width: 250px;
+        height: 100px;
+        background-color: rgba(188, 139, 229, 0.30);
+        border-radius:4px ;
+        border: solid 1px #333;
+        opacity: 0.5;
+  
+    
 }
 #footer{
     display: flex;
     justify-content: flex-end;
-
 padding-top: 10px;
-
-
     position: fixed;
     left: 0;
     bottom: 0;
@@ -24,17 +45,14 @@ padding-top: 10px;
     text-align: center;
 }
 
-@media (max-width:48em){
-    body{
-        background: linear-gradient(135deg,#b45ed6, #d574b0 );
-    }
-}
+
 .btn{
     display: inline-block;
     border: none;
     border-radius: 4px;
     background-color: rgba(188, 139, 229, 0.85);
-    /* background-color: #b45ed6; */
+    font-family: 'Amatic SC', cursive;
+ 
     color: #fff;
     padding: 0.75rem 1.5rem;
     margin-top: 1rem;
