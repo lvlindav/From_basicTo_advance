@@ -4,6 +4,15 @@
     justify-content: center;
     text-align: center;
     padding: 28px;
+    /* border: #333 solid 1px;
+    box-shadow: 0 5px 50px rgba(92, 12, 142, 0.5);
+    border-radius: 10px;
+    margin-top: auto;
+    
+    margin-left:25%;
+    */
+    /* height: 14em;
+    width: 25em; */
 }
 #contact label{
     display: flex;
