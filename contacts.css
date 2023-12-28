@@ -1,74 +1,26 @@
 
-#contact{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    padding: 28px;
-    /* border: #333 solid 1px;
-    box-shadow: 0 5px 50px rgba(92, 12, 142, 0.5);
-    border-radius: 10px;
-    margin-top: auto;
-    
-    margin-left:25%;
-    */
-    /* height: 14em;
-    width: 25em; */
-}
-#contact label{
-    display: flex;
-    justify-content: center;
-   
-}
-#name{
-    background-color: rgba(188, 139, 229, 0.30);
-    border-radius:4px ;
-    border: solid 1px #333;
-    opacity: 0.5;
-}
-#email{
-    background-color: rgba(188, 139, 229, 0.30);
-    border-radius:4px ;
-    border: solid 1px #333;
-    opacity: 0.5;
-}
-#contact textarea{
-    width: 250px;
-        height: 100px;
-        background-color: rgba(188, 139, 229, 0.30);
-        border-radius:4px ;
-        border: solid 1px #333;
-        opacity: 0.5;
-  
-    
-}
-#footer{
-    display: flex;
-    justify-content: flex-end;
-padding-top: 10px;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: rgba(188, 139, 229, 0.85);
-    color: white;
-    text-align: center;
-}
 
 
-.btn{
-    display: inline-block;
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 200px;
+}
+.box{
+    /* display: inline-block; */
     border: none;
+    gap: 20px;
+    box-shadow: 10px 10px;
     border-radius: 4px;
     background-color: rgba(188, 139, 229, 0.85);
-    font-family: 'Amatic SC', cursive;
-    font-size: 28px;
- 
-    color: #fff;
+  object-fit: contain;
+  width: 550px;
+  height: 500px;
+  color:rgba(140, 111, 164, 0.85);
     padding: 0.75rem 1.5rem;
     margin-top: 1rem;
     text-decoration: none;
-    transition: opacity 1s ease-out;
+   
+ 
   }
-  .btn:hover{
-    opacity: 0.5;
-  }  
