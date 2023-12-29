@@ -1,14 +1,8 @@
 
 
 
-.container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 200px;
-}
+
 .box{
-    /* display: inline-block; */
     border: none;
     gap: 20px;
     box-shadow: 10px 10px;
@@ -24,3 +18,9 @@
    
  
   }
+  .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 200px;
+}
